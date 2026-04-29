@@ -1,0 +1,10 @@
+log_file: "/var/lib/docker/volumes/HNG-nginx-logs/_data/hng-access.log"
+slack_webhook: "YOUR_SLACK_WEBHOOK_URL_HERE"
+thresholds:
+  z_score: 3.0
+  rate_multiplier: 5.0
+  error_multiplier: 3.0
+windows:
+  rate_seconds: 60
+  baseline_minutes: 30
+ban_durations: [600, 1800, 7200]
